@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="web ini dibuat untuk mengenal tentang renang,manfaatnya dan juga membuka kursus" />
+    <meta name="author" content="DPW2023-2-A01" />
+    <title>Enquiry</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header start -->
+    <header>
+      <div class="logo">
+        <img src="img/logo.png" alt="logo" />
+        <h4>Swim Academy</h4>
+      </div>
+
+      <!-- menu start -->
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="enquiry.html">Contact</a></li>
+          <li><a href="evaluation.html">Evaluation</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+      </nav>
+      <!-- menu end -->
+
+      <!-- sidebar start -->
+      <aside>
+        <ul class="nav-side">
+          <li><a href="#">Private class</a></li>
+          <li><a href="#">Semi private class</a></li>
+          <li><a href="#">Group class</a></li>
+          <li><a href="#">VIP class</a></li>
+        </ul>
+      </aside>
+
+      <!-- icon/button yang akan menampilkan sidebar yang tersembunyi ketika diklik -->
+      <div class="hamburger-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <!-- sidebar end -->
+    </header>
+    <!-- Header end -->
+
+    <!-- Content start/form -->
+    <main id="form-container">
+      <form id="ourform">
+        <div class="section-1">
+          <div class="input-name">
+            <input type="text" name="name" id="name" />
+            <label for="name">Name</label>
+            <p></p>
+          </div>
+
+          <div class="input-drop">
+            <select name="drop" id="drop">
+              <option value="pilih">Pilih paket</option>
+              <option value="paket class">Private class</option>
+              <option value="semi private class">Semi private class</option>
+              <option value="grup class">Grup class</option>
+              <option value="vip class">VIP class</option>
+            </select>
+            <p></p>
+          </div>
+        </div>
+
+        <div class="section-2">
+          <div class="input-textarea">
+            <textarea name="text-area" id="text-area"></textarea>
+            <label for="text-area">Alamat</label>
+            <p></p>
+          </div>
+        </div>
+
+        <div class="section-3">
+          <div class="input-checkbox">
+            <div class="checkbox-email">
+              <input type="checkbox" name="checkbox-email" id="checkbox-email" />
+              <label for="checkbox-email">Email</label>
+            </div>
+
+            <div class="checkbox-telephone">
+              <input type="checkbox" name="checkbox-telephone" id="checkbox-telephone" />
+              <label for="checkbox-telephone">Telephone</label>
+            </div>
+            <p></p>
+          </div>
+
+          <div class="input-checkbox-active">
+            <div class="input-email">
+              <input type="text" name="email" id="email" />
+              <label for="email">Email</label>
+              <p></p>
+            </div>
+
+            <div class="input-telephone">
+              <input type="text" name="telephone" id="telephone" />
+              <label for="telephone">Telephone</label>
+              <p></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="section-4">
+          <div class="input-man">
+            <input type="radio" name="gender" id="man" />
+            <label for="man">Man</label>
+          </div>
+
+          <div class="input-woman">
+            <input type="radio" name="gender" id="woman" />
+            <label for="woman">Woman</label>
+          </div>
+          <p id="outputGender"></p>
+        </div>
+
+        <div class="section-5">
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+
+      <div id="verifikasi">
+        <!--div verifikasi di hidden namun ketika klik submit div akan muncul -->
+        <div id="judul-verifikasi">
+          <h1>Peringatan !!!</h1>
+        </div>
+        <div id="text-verifikasi"></div>
+      </div>
+    </main>
+    <!-- Content end/form -->
+
+    <!-- Footer start -->
+    <footer>
+      <div class="left">
+        <h4>Kelas DPW A</h4>
+        <h4>DPW2023-2-A01</h4>
+      </div>
+
+      <div class="mid">
+        <h4>Anggota</h4>
+        <ul>
+          <li>Ahmad Mufid Risqi</li>
+          <li>Nur Fathur Rachman</li>
+          <li>Harits Putra Junaidi</li>
+          <li>M. Aldi Rahmandika</li>
+          <li>Intan Aulia Majid</li>
+        </ul>
+      </div>
+
+      <div class="right">
+        <h4>Bahasa Pemrograman</h4>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+        </ul>
+      </div>
+
+      <div class="square-1"></div>
+      <div class="square-2"></div>
+
+      <div class="circle-1"></div>
+      <div class="circle-2"></div>
+    </footer>
+    <!-- footer end -->
+
+    <script src="HamburgerMenu.js"></script>
+    <script src="enquiry.js"></script>
+  </body>
+</html>
